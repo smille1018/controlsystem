@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--해당 문서(document)의 타입을 정의함.-->
+<html lang="ko">
+<!--언어를 한국어로 설정-->
+
+<head>
+  <meta charset="UTF-8">
+  <!--문자 인코딩 방식:UTF-8-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- 웹 페이지에서 사용자가 볼 수 있는 영역 설정: 
+  크기(스마트폰의 실제 액정 크기), 화면(zoom up 정도를 1배율), 애플의 safari(사파리) 브라우저 내용 줄임 방지-->
+  <meta name="description" content="문 제어 시스템과 차트를 활용한 분실물 관리 시스템">
+  <!--웹페이지 설명: 학급 문 보안에 대한 설명-->
+  <meta name="author" content="YUN EUNSEO">
+  <!--웹페이지 저자: 윤은서-->
+  <link rel="logo" type="image/png" href="lock icon.png" sizes="32x32" />
+  <!--아이콘 이미지 설정-->
+  <title>Door Securiy System</title>
+  <!--웹페이지 이름: 문 보안 시스템-->
+
+  <!--stylesheet-->
+
+  <!--글꼴 지정(구글 웹폰트 사용)-->
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <!--웹페이지 디자인-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+  <!--awesome font로 아이콘 만들기-->
+  <link href="styles/styles.css" rel="stylesheet" type="text/css">
+  <link href="styles/custom-responsive-styles.css" rel="stylesheet" type="text/css">
+
+
+  <!--scripts-->
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/all-plugins.js"></script>
+  <script type="text/javascript" src="scripts/plugins-activate.js"></script>
+</head>
+
+<body id="page-top">
+  <!--페이지 윗부분 요소 식별(고유 식별자 정의)-->
+  <div class="logo">
+    <!--logo 의미 설정: bars 버튼-->
+    <i class="fa fa-lock" aria-hidden="true"><span style="font-family: Do Hyeon">307 Door automation system</span></i>
+    <!--잠금 사진, 스크린 리더 출력 안되게 숨기기, 문 자동화 시스템-->
+  </div>
+  <a class="menu-toggle rounded" href="#">
+    <!--메뉴 토글(on-off) 둥글게-->
+    <i class="fa fa-bars"></i>
+    <!--bars 설정-->
+  </a>
+  <nav id="sidebar-wrapper">
+    <!--bar 나오도록 설정-->
+    <ul class="sidebar-nav">
+      <!--bar list 정의-->
+      <li class="sidebar-brand">
+        <a class="smooth-scroll" href="#Header"></a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#page-top" style="font-family: Do Hyeon">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#About" style="font-family: Do Hyeon">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#Services" style="font-family: Do Hyeon">Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#Control" style="font-family: Do Hyeon">Control</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#List" style="font-family: Do Hyeon">List</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="smooth-scroll" href="#Suggestions" style="font-family: Do Hyeon">Suggestions</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Header Starts -->
+  <section id="Banner" class="content-section">
+    <div class="container content-wrap text-center">
+      <h1 style="font-family: Do Hyeon">문 제어 시스템</h1>
+      <a class="btn btn-primary btn-xl smooth-scroll" href="#Control">문 제어</a>
+      <a class="btn btn-primary btn-xl smooth-scroll" href="#List">분실물 찾기</a>
+      <a class="btn btn-primary btn-xl smooth-scroll" href="#Suggestions">건의사항</a>
+    </div>
+    <div class="overlay"></div>
+  </section>
+  <!-- Header Ends -->
+
+  <!-- About Us Starts -->
+  <section id="About" class="content-section">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="block-heading">
+            <h2 style="font-family: Do Hyeon">About Us</h2>
+          </div>
+          <p class="lead" style="font-family: Do Hyeon">학생 정보 입력 후 3-7반의 문 제어와 분실물 서비스를 이용하실 수 있습니다.</p>
+          <p class="lead" style="font-family: Do Hyeon">많은 학생들이 이동수업을 하면서 교실이 비거나 학급에 소속되어 있지 않은 학생들의 자유로운 교실 출입이
+            가능해졌습니다.<br>각 교실의 보안이 취약해지면서 학생 도난 사건의 발생 가능성이 높아졌고,<br>바쁜 교실 이동으로 인해 교실 보안에 신경쓰지 못하는 문제점들을 보안하기 위해 DB기술을
+            활용한
+            웹을 제작했습니다.<br>스마트폰 기기만으로 문 제어 시스템과 차트를 활용한 분실물 관리 시스템을 사용한다면 효율적인 교실 보안이 가능합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- About Us Ends -->
+
+  <!-- How to use Starts -->
+  <section id="Services" class="content-section text-center">
+    <div class="container">
+      <div class="block-heading">
+        <h2 style="font-family: Do Hyeon">How to use</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-5">
+          <div class="service-box">
+            <div class="service-icon yellow">
+              <div class="front-content">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <h2 style="font-family: Do Hyeon">문 제어</h2>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>문 제어</h3>
+              <p>자신의 정보를 입력한 후, 문 제어를 실행합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          <div class="service-box">
+            <div class="service-icon orange">
+              <div class="front-content">
+                <i class="fa fa-search"></i>
+                <h2 style="font-family: Do Hyeon">분실물 찾기</h2>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>분실물 찾기</h3>
+              <p>학번과 이름을 적은 후, 잃어버린 교과시간과 물건이름, 앉은 자리 등 도움 될 만한 내용 작성</p>
+              <p>*필수 항목: 교과명, 교시, 물건 이름, 앉은 자리<br>(ex.창가쪽부터 2번째 칠판으로부터 1번째 자리)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          <div class="service-box ">
+            <div class="service-icon red">
+              <div class="front-content">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                <h2 style="font-family: Do Hyeon">건의사항</h2>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>건의사항</h3>
+              <p>3-7반 교실을 사용하면서 불편한 점이나 건의하고 싶은 점 기술</p>
+              <p>*주의사항: 글을 작성하실 때는, 욕설이나 비방글은 절대 불가하며 바른말로 작성해주시기 바랍니다.</p>
+              <p>익명이 가능하기는 하나 왠만하면 기명으로 작성해주시기 바랍니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How to use Ends -->
+
+  <!--Control Starts -->
+  <section id="Control" class="content-section">
+    <div class="container">
+      <div class="block-heading">
+        <h2 style="font-family: Do Hyeon">Door Control System</h2>
+        <p>자신의 정보를 입력한 후, 문 제어를 실행하세요.</p>
+        <form method="POST" action="control.html">
+          <a href="control.html"><input type="button" name="btn1" value="정보 입력" style="font-family: Do Hyeon"></input></a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--Control Ends-->
+
+  <!-- List Starts -->
+  <section id="List" class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="block-heading">
+            <h2 style="font-family: Do Hyeon">Lost and Found List</h2>
+            <p>분실된 물건을 요청하고 찾기 위해 잃어버린 물건의 목록을 작성해주세요.<br>자세한 내용은 Services의 사용 방법을 참고하세요!</p>
+            <form method="POST" action="list1.html">
+              <a href="list1.html"><input type="button" name="btn2" value="분실물 리스트 확인하기" style="font-family: Do Hyeon"></input></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Suggestions Starts-->
+  <section id="Suggestions" class="content-section">
+    <div class="container">
+      <div class="block-heading">
+        <h2 style="font-family: Do Hyeon">Suggestion Bulletin</h2>
+        <p>3-7반 교실을 사용하면서 불편한 점이나 건의하고 싶은 점을 기술해 주시기 바랍니다.<br>게시판 사용 전 Services의 내용 필독 바랍니다!</p>
+        <form method="POST" action="list2.html">
+          <a href="list2.html"><input type="button" name="btn1" value="게시판 바로가기" style="font-family: Do Hyeon"></input></a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Suggestions Ends -->
+
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="text-muted small mb-0">Copyright © Door Security System 2020</p>
+      <p class="text-muted small mb-0">Designed by <a href="https://www.instagram.com/silver_standd/"
+          target="_balnk">YUN-EUNSEO</p>
+    </div>
+  </footer>
+</body>
+
+</html>
